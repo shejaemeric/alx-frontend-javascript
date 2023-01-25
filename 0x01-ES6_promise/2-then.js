@@ -1,4 +1,5 @@
 function handleResponseFromAPI(promise) {
+// function to return a promise
   promise
     .then((result) => result)
     .catch(() => new Error())
