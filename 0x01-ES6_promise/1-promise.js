@@ -2,7 +2,7 @@ function getFullResponseFromAPI(success) {
   // function to return a promise
   const promise = new Promise((resolve, reject) => {
     if (success) resolve({ status: 200, message: 'Success' });
-    else if (!success) reject(new Error('The fake API is not working currently'));
+    else reject(new Error('The fake API is not working currently'));
   });
   return promise;
 }
